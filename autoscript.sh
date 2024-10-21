@@ -1,19 +1,18 @@
 #!/bin/bash
 
 # Update package lists and install required packages
-sudo apt update
-sudo apt install -y openjdk-17-jre-headless
-sudo apt install -y screen
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y openjdk-17-jre-headless screen ufw
 sudo ufw allow 25565
 
 # Download the Minecraft server JAR file
-wget https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
+sudo wget -O server.jar https://launcher.mojang.com/v1/objects/c8f83c5655308435b3dcf03c06d9fe8740a77469/server.jar
 
 # Create eula.txt to accept the EULA
-echo "eula=true" > eula.txt
+echo "eula=true" | sudo tee eula.txt > /dev/null
 
 # Create server.properties with the desired settings
-cat <<EOL > server.properties
+sudo tee server.properties > /dev/null <<EOL
 enable-jmx.monitoring=False
 rcon.port=25575
 level-seed=
@@ -33,7 +32,7 @@ max-tick-time=60000
 EOL
 
 # Start the server in a new screen session
-screen -dmS minecraft_server java -Xms1G -Xmx2G -jar server.jar nogui
+sudo screen -dmS minecraft_server java -Xms1G -Xmx2G -jar server.jar nogui
 
 # List screens
-screen -list
+sudo screen -list
