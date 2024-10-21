@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Update package lists and install required packages
-sudo apt update && sudo apt upgrade -y
-sudo apt install -y openjdk-17-jre-headless screen ufw
+sudo apt update && apt upgrade -y
+sudo apt install openjdk-17-jre-headless screen ufw -y 
 sudo ufw allow 25565
 
 # Download the Minecraft server JAR file
@@ -13,21 +13,21 @@ echo "eula=true" | sudo tee eula.txt > /dev/null
 
 # Create server.properties with the desired settings
 sudo tee server.properties > /dev/null <<EOL
-enable-jmx.monitoring=False
+enable-jmx.monitoring=false
 rcon.port=25575
 level-seed=
 gamemode=survival
-enable-command-block=False
-enable-query=False
+enable-command-block=false
+enable-query=false
 generator-setting={}
-level-name=False
+level-name=false
 motd=Minecraft Development Server
 query.port=25565
 pvp=True
-generate-structures=True
-difficulty=Normal
+generate-structures=true
+difficulty=normal
 network-compression-threshold=256
-require-resource-pack=False
+require-resource-pack=false
 max-tick-time=60000
 EOL
 
