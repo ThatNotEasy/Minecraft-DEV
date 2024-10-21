@@ -1,2 +1,9 @@
 # Minecraft-DEV
-Minecraft Local Server Development Repository
+
+# Usage:
+```
+chmod +x autoscript.sh
+./autoscript.sh
+```
+
+
