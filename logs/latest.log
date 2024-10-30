@@ -1,3 +1,35 @@
-[01:57:26] [ServerMain/ERROR]: Failed to load properties from file: server.properties
-[01:57:26] [ServerMain/WARN]: Failed to load eula.txt
-[01:57:26] [ServerMain/INFO]: You need to agree to the EULA in order to run the server. Go to eula.txt for more info.
+[02:01:03] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:01:05] [ServerMain/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:05] [ServerMain/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:05] [ServerMain/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:01:05] [ServerMain/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:01:05] [ServerMain/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:05] [Worker-Main-13/INFO]: Loaded 7 recipes
+[02:01:06] [Worker-Main-13/INFO]: Loaded 1141 advancements
+[02:01:08] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[02:01:08] [Server thread/INFO]: Loading properties
+[02:01:08] [Server thread/INFO]: Default game type: SURVIVAL
+[02:01:08] [Server thread/INFO]: Generating keypair
+[02:01:08] [Server thread/INFO]: Starting Minecraft server on *:25565
+[02:01:08] [Server thread/INFO]: Using default channel type
+[02:01:09] [Server thread/INFO]: Preparing level "world"
+[02:01:20] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:01:21] [Worker-Main-19/INFO]: Preparing spawn area: 0%
+[02:01:21] [Worker-Main-21/INFO]: Preparing spawn area: 0%
+[02:01:21] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[02:01:22] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[02:01:22] [Worker-Main-12/INFO]: Preparing spawn area: 0%
+[02:01:23] [Worker-Main-18/INFO]: Preparing spawn area: 1%
+[02:01:23] [Worker-Main-15/INFO]: Preparing spawn area: 2%
+[02:01:24] [Worker-Main-14/INFO]: Preparing spawn area: 2%
+[02:01:24] [Worker-Main-20/INFO]: Preparing spawn area: 4%
+[02:01:25] [Worker-Main-12/INFO]: Preparing spawn area: 6%
+[02:01:25] [Worker-Main-13/INFO]: Preparing spawn area: 9%
+[02:01:26] [Worker-Main-22/INFO]: Preparing spawn area: 12%
+[02:01:26] [Worker-Main-17/INFO]: Preparing spawn area: 14%
+[02:01:27] [Worker-Main-19/INFO]: Preparing spawn area: 19%
+[02:01:27] [Worker-Main-21/INFO]: Preparing spawn area: 22%
+[02:01:28] [Worker-Main-22/INFO]: Preparing spawn area: 26%
+[02:01:29] [Worker-Main-22/INFO]: Preparing spawn area: 30%
+[02:01:29] [Worker-Main-16/INFO]: Preparing spawn area: 33%
+[02:01:29] [Worker-Main-17/INFO]: Preparing spawn area: 36%
