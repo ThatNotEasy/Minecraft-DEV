@@ -47,6 +47,12 @@ require-resource-pack=false
 max-tick-time=60000
 EOL
 
+# Enable UFW if not enabled
+if ! sudo ufw status | grep -q "Status: active"; then
+    echo "UFW is not enabled. Enabling UFW..."
+    sudo ufw enable
+fi
+
 # Configure firewall to allow Minecraft server port
 echo "Configuring firewall..."
 sudo ufw allow "$SERVER_PORT"
